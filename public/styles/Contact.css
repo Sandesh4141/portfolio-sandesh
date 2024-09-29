@@ -1,42 +1,72 @@
-/* Contact Section Styles */
+:root {
+  --color-primary-light: #FDFAD9;  /* Lightest shade */
+  --color-primary: #C1E2A4;        /* Light green */
+  --color-secondary: #86D293;      /* Darker green */
+  --color-accent: #6256CA;         /* Accent purple */
+}
+
 .contact {
-    background-color: #0A192F; /* Dark background for consistency */
-    color: #FFFFFF; /* White text for contrast */
-    padding: 60px 20px; /* Ample padding for spacing */
-    border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    max-width: 600px; /* Max width for the section */
-    margin: 20px auto; /* Centered with margin */
-    text-align: center; /* Center text alignment */
-  }
-  
-  /* Heading Styles */
-  .contact h1 {
-    font-size: 2.5rem; /* Larger font size for emphasis */
-    margin-bottom: 20px; /* Spacing below the heading */
-    color: #64FFDA; /* Accent color for the heading */
-  }
-  
-  /* Paragraph Styles */
-  .contact p {
-    font-size: 1.2rem; /* Font size for the paragraph */
-    line-height: 1.6; /* Improved line height for better text flow */
-    margin: 0; /* Remove default margin */
-    opacity: 0.9; /* Slight transparency for a modern aesthetic */
-  }
-  
-  /* Responsive Styles */
-  @media screen and (max-width: 768px) {
-    .contact {
-      padding: 40px 15px; /* Reduce padding on smaller screens */
-    }
-  
-    .contact h1 {
-      font-size: 2rem; /* Smaller heading size */
-    }
-  
-    .contact p {
-      font-size: 1rem; /* Adjust paragraph font size */
-    }
-  }
-  
+  background-color: var(--color-primary-light); /* Lightest shade background */
+  padding: 40px;
+  text-align: center; /* Center the text */
+}
+
+.contact h1 {
+  color: var(--color-secondary); /* Darker green for heading */
+  margin-bottom: 20px;
+}
+
+.contact p {
+  color: var(--color-primary); /* Light green for paragraphs */
+  font-size: 1.2em;
+  margin-bottom: 40px; /* More space below the paragraph */
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow cards to wrap */
+  gap: 20px; /* Space between cards */
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  border-radius: 15px;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  padding: 20px;
+  width: 250px; /* Card width */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.card-icon {
+  font-size: 2em; /* Icon size */
+  color: var(--color-accent); /* Accent purple for icons */
+  margin-bottom: 10px; /* Space below icon */
+}
+
+.card h2 {
+  color: var(--color-secondary); /* Darker green for headings in cards */
+  margin-bottom: 5px;
+}
+
+.card p {
+  color: var(--color-primary); /* Light green for descriptions */
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: var(--color-accent); /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make link bold */
+}
+
+.card a:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: var(--color-secondary); /* Change color on hover */
+}

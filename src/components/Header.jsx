@@ -28,9 +28,13 @@ function Header() {
             <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <Link to="/download_btn" className="download-btn">
+          <a
+              href="../../public/cv.pdf"  
+              download="Sandesh_CV.pdf" 
+              className="download-btn"
+            >
               Download CV
-            </Link>
+            </a>
           </li>
         </ul>
         <button

@@ -1,7 +1,6 @@
 import React, { createElement } from "react";
 import "../../public/styles/About.css";
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
-
+import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 
 function About() {
   function createSkillMeter(skillName, skillLevel) {
@@ -47,11 +46,13 @@ function About() {
           >
             <FaTwitter className="social-icon" />
           </a>
+          <a href="https://instagram.com/sandesh.sp41">
+            <FaInstagram className="social-icon" />
+          </a>
         </div>
 
         <div className="skills">
           <h2>My Skills</h2>
-
 
           {createSkillMeter("HTML", "90%")}
           {createSkillMeter("CSS", "90%")}

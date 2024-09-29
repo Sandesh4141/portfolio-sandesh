@@ -3,28 +3,28 @@ import "../../public/styles/Projects.css";
 
 const projects = [
   {
-    title: "Project 1",
-    description: "Description of your project.",
-    githubLink: "https://github.com/yourusername/project1",
-    liveLink: "https://yourliveproject1.com",
+    title: "Unreleased-Beats",
+    description: "Project For Song Management. Built with NodeJS and Express",
+    githubLink: "https://github.com/Sandesh4141/Unreleased-Beats",
+    liveLink: "N.A",
   },
   {
-    title: "Project 2",
-    description: "Description of another project.",
-    githubLink: "https://github.com/yourusername/project2",
-    liveLink: "https://yourliveproject2.com",
+    title: "BMI Calculator App ",
+    description: "Basic BMI Calcator app built with Flutter.",
+    githubLink: "https://github.com/Sandesh4141/bmi_calculator",
+    liveLink: "N.A",
   },
   {
-    title: "Project 3",
-    description: "Description of another project.",
-    githubLink: "https://github.com/yourusername/project2",
-    liveLink: "https://yourliveproject2.com",
+    title: "TDS-The Daily Scoope",
+    description: "News App built With nodeJs and Axios using news-api.",
+    githubLink: "https://github.com/Sandesh4141/The-Daily-Scoope",
+    liveLink: "https://tds-wsyk.onrender.com/",
   },
   {
-    title: "Project 4",
-    description: "Description of another project.",
-    githubLink: "https://github.com/yourusername/project2",
-    liveLink: "https://yourliveproject2.com",
+    title: "Advice Generator App ",
+    description: "Advice Generator built with nodeJS and advice-api.",
+    githubLink: "https://github.com/Sandesh4141/Advice-generator-app",
+    liveLink: "https://sandesh4141.github.io/Advice-generator-app/",
   },
   // Add more projects here
 ];

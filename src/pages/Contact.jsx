@@ -1,6 +1,6 @@
 import React from "react";
 import "../../public/styles/Contact.css"; // Ensure this path is correct
-import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope, FaInstagram, FaPinterest } from "react-icons/fa";
 
 const contactDetails = [
   {
@@ -26,6 +26,12 @@ const contactDetails = [
     title: "Instagram",
     description: "See my photos on Instagram",
     link: "https://instagram.com/sandesh.sp41",
+  },
+  {
+    icon: <FaPinterest />,
+    title: "Pinterest",
+    description: "See my pins on Pinterest",
+    link: "https://in.pinterest.com/sandeshpawar414141/",
   },
 ];
 

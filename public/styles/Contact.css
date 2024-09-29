@@ -12,12 +12,12 @@
 }
 
 .contact h1 {
-  color: var(--color-secondary); /* Darker green for heading */
+  color: var(--color-accent); /* Darker green for heading */
   margin-bottom: 20px;
 }
 
 .contact p {
-  color: var(--color-primary); /* Light green for paragraphs */
+  color: black; /* Light green for paragraphs */
   font-size: 1.2em;
   margin-bottom: 40px; /* More space below the paragraph */
 }
@@ -51,12 +51,12 @@
 }
 
 .card h2 {
-  color: var(--color-secondary); /* Darker green for headings in cards */
+  color: var(--color-accent); /* Darker green for headings in cards */
   margin-bottom: 5px;
 }
 
 .card p {
-  color: var(--color-primary); /* Light green for descriptions */
+  color: black; /* Light green for descriptions */
   margin-bottom: 10px;
 }
 

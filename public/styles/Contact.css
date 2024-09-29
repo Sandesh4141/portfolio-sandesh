@@ -1,0 +1,42 @@
+/* Contact Section Styles */
+.contact {
+    background-color: #0A192F; /* Dark background for consistency */
+    color: #FFFFFF; /* White text for contrast */
+    padding: 60px 20px; /* Ample padding for spacing */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    max-width: 600px; /* Max width for the section */
+    margin: 20px auto; /* Centered with margin */
+    text-align: center; /* Center text alignment */
+  }
+  
+  /* Heading Styles */
+  .contact h1 {
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    margin-bottom: 20px; /* Spacing below the heading */
+    color: #64FFDA; /* Accent color for the heading */
+  }
+  
+  /* Paragraph Styles */
+  .contact p {
+    font-size: 1.2rem; /* Font size for the paragraph */
+    line-height: 1.6; /* Improved line height for better text flow */
+    margin: 0; /* Remove default margin */
+    opacity: 0.9; /* Slight transparency for a modern aesthetic */
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .contact {
+      padding: 40px 15px; /* Reduce padding on smaller screens */
+    }
+  
+    .contact h1 {
+      font-size: 2rem; /* Smaller heading size */
+    }
+  
+    .contact p {
+      font-size: 1rem; /* Adjust paragraph font size */
+    }
+  }
+  

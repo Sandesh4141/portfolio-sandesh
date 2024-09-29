@@ -1,0 +1,89 @@
+:root {
+  --color-primary-light: #FDFAD9;  /* Lightest shade */
+  --color-primary: #C1E2A4;        /* Light green */
+  --color-secondary: #86D293;      /* Darker green */
+  --color-accent: #6256CA;         /* Accent purple */
+}
+
+.about {
+  padding: 5rem 2rem;
+  background-color: var(--color-primary-light); /* Light background */
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--color-accent); /* Accent purple for text */
+}
+
+.about h1 {
+  font-size: 3rem;
+  font-family: 'Fredoka', sans-serif;
+  color: var(--color-accent); /* Accent purple */
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--color-secondary); /* Darker green */
+}
+
+.social-media {
+  margin-bottom: 3rem;
+}
+
+.social-media h2 {
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: var(--color-secondary);
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--color-primary);
+}
+
+.skills {
+  margin-top: 3rem;
+}
+
+.skills h2 {
+  font-size: 1.8rem;
+  color: var(--color-accent);
+  margin-bottom: 2rem;
+}
+
+.skill {
+  margin-bottom: 1.5rem;
+}
+
+.skill span {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.skill-meter {
+  background-color: var(--color-primary-light);
+  border-radius: 10px;
+  height: 1.5rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.meter-fill {
+  height: 100%;
+  background-color: var(--color-secondary); /* Darker green */
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}

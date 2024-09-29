@@ -1,0 +1,101 @@
+:root {
+  --color-primary-light: #FDFAD9;  /* Lightest shade */
+  --color-primary: #C1E2A4;        /* Light green */
+  --color-secondary: #86D293;      /* Darker green */
+  --color-accent: #6256CA;         /* Accent purple */
+}
+
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: var(--color-accent);  /* Use accent purple */
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-primary-light);  /* Light text color */
+}
+
+.logo h1 {
+  font-family: "Fredoka", sans-serif;
+  color: var(--color-primary-light);  /* Light text color */
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links,
+.nav-links-mobile {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links li a,
+.nav-links-mobile li a {
+  text-decoration: none;
+  color: var(--color-primary-light);  /* Light text color */
+  font-size: 1rem;
+  font-family: "Fredoka", sans-serif;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links-mobile li a:hover {
+  color: var(--color-secondary);  /* Darker green on hover */
+}
+
+.download-btn {
+  background-color: var(--color-secondary);  /* Darker green */
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: var(--color-primary-light);  /* Light text color */
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  background-color: var(--color-accent);  /* Accent purple on hover */
+}
+
+/* Mobile responsiveness */
+.mobile-menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: var(--color-primary-light);  /* Light icon color */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: var(--color-accent);  /* Accent purple background */
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { createElement } from "react";
 import "../../public/styles/About.css";
 import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
-
+import "animate.css";
 function About() {
   function createSkillMeter(skillName, skillLevel) {
     return (
@@ -16,7 +16,7 @@ function About() {
   return (
     <section className="about">
       <div className="about-content">
-        <h1>About Me</h1>
+        <h1 class="animate__animated animate__bounce">About Me</h1>
         <p>
           I am a passionate Web Developer with experience in React and Flutter.
           I enjoy building web applications, solving complex problems, and

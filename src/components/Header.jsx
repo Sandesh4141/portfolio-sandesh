@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../public/styles/Header.css";
+// import { Link } from "react-scroll";
 
 function Header() {
   const [isMobile, setIsMobile] = useState(false);
@@ -16,6 +17,7 @@ function Header() {
           onClick={() => setIsMobile(false)}
         >
           <li>
+            {/* <Link to="/">Home</Link> */}
             <Link to="/">Home</Link>
           </li>
           <li>
@@ -28,9 +30,9 @@ function Header() {
             <Link to="/contact">Contact</Link>
           </li>
           <li>
-          <a
-              href="../../public/cv.pdf"  
-              download="Sandesh_CV.pdf" 
+            <a
+              href="../../public/cv.pdf"
+              download="Sandesh_CV.pdf"
               className="download-btn"
             >
               Download CV

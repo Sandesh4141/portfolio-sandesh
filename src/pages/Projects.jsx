@@ -1,18 +1,18 @@
 import React from 'react';
 import "../../public/styles/Projects.css";
-
+import "animate.css";
 const projects = [
   {
     title: "Unreleased-Beats",
     description: "Project For Song Management. Built with NodeJS and Express",
     githubLink: "https://github.com/Sandesh4141/Unreleased-Beats",
-    liveLink: "N.A",
+    liveLink: "#",
   },
   {
     title: "BMI Calculator App ",
     description: "Basic BMI Calcator app built with Flutter.",
     githubLink: "https://github.com/Sandesh4141/bmi_calculator",
-    liveLink: "N.A",
+    liveLink: "#"
   },
   {
     title: "TDS-The Daily Scoope",
@@ -32,10 +32,10 @@ const projects = [
 function Projects() {
   return (
     <div className="projects">
-      <h1>My Projects</h1>
+      <h1 class="animate__animated animate__bounce">My Projects</h1>
       <div className="projects-container">
         {projects.map((project, index) => (
-          <div className="project-card" key={index}>
+          <div className="project-card " key={index}>
             <h2>{project.title}</h2>
             <p>{project.description}</p>
             <div className="project-links">

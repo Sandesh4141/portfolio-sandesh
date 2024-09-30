@@ -38,11 +38,11 @@ const contactDetails = [
 function Contact() {
   return (
     <div className="contact">
-      <h1>Contact Me</h1>
+      <h1 class="animate__animated animate__bounce" >Contact Me</h1>
       <p>Email: sandeshpawar414141@gmail.com</p>
       <div className="contact-cards">
         {contactDetails.map((contact, index) => (
-          <div className="card" key={index}>
+          <div className="card " key={index}>
             <div className="card-icon">{contact.icon}</div>
             <h2>{contact.title}</h2>
             <p>{contact.description}</p>

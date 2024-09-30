@@ -1,0 +1,71 @@
+:root {
+  --color-primary-light: #FDFAD9;  /* Lightest shade */
+  --color-primary: #C1E2A4;        /* Light green */
+  --color-secondary: #86D293;      /* Darker green */
+  --color-accent: #6256CA;         /* Accent purple */
+}
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+}
+
+.hero-section {
+  height: 100vh;
+  background-color: var(--color-primary-light); /* Light background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+  background: linear-gradient(to right, var(--color-primary-light), var(--color-secondary));
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: var(--color-accent); /* Accent color for title */
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+ 
+  margin-bottom: 2rem;
+  color: var(--color-accent);
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: var(--color-accent); /* Accent color for button */
+  color: var(--color-primary-light); /* Light text color */
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: var(--color-secondary); /* Darker green on hover */
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    padding: 0.6rem 1.5rem;
+  }
+}

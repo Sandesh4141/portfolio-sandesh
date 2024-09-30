@@ -1,0 +1,24 @@
+:root {
+  --color-primary-light: #FDFAD9;  /* Lightest shade */
+  --color-primary: #C1E2A4;        /* Light green */
+  --color-secondary: #86D293;      /* Darker green */
+  --color-accent: #6256CA;         /* Accent purple */
+}
+
+footer {
+  background-color: var(--color-accent);  /* Accent purple */
+  color: var(--color-primary-light);      /* Lightest shade text */
+  text-align: center;
+  padding: 1.5rem 0;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0;
+  color: var(--color-primary-light);      /* Lightest shade text */
+}
+
+footer p:hover {
+  color: var(--color-primary);  /* Light green on hover */
+}

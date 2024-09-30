@@ -1,0 +1,68 @@
+:root {
+  --color-primary-light: #FDFAD9;  /* Lightest shade */
+  --color-primary: #C1E2A4;        /* Light green */
+  --color-secondary: #86D293;      /* Darker green */
+  --color-accent: #6256CA;         /* Accent purple */
+}
+
+.projects {
+  padding: 2rem;
+  background-color: var(--color-primary-light); /* Light background */
+}
+
+h1 {
+  text-align: center; /* Center the heading */
+  margin-bottom: 2rem; /* Add space below the heading */
+  color: var(--color-accent); /* Accent color for heading */
+  font-size: 2.5rem; /* Increased font size */
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Responsive card layout */
+  gap: 2rem; /* Space between cards */
+}
+
+.project-card {
+  /* background-color: var(--color-primary);  */
+  border-radius: 15px; /* Rounded corners */
+  padding: 2rem; /* Generous padding for cards */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+  position: relative; /* Positioning for hover effects */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.project-card h2 {
+  color: var(--color-accent); /* Accent color for project titles */
+  font-size: 1.8rem; /* Increased heading size */
+}
+
+.project-card p {
+  margin: 1rem 0; /* Margin for description */
+  color: #333; /* Dark text for readability */
+}
+
+.project-links {
+  margin-top: 1rem; /* Space above links */
+  display: flex;
+  gap: 0.5rem; /* Space between links */
+}
+
+.project-links a {
+  background-color: var(--color-secondary); /* Darker green for buttons */
+  color: white; /* White text for contrast */
+  padding: 0.75rem 1.25rem; /* Button padding */
+  border-radius: 5px; /* Rounded button corners */
+  text-decoration: none; /* Remove underline from links */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.project-links a:hover {
+  background-color: var(--color-accent); /* Accent color on hover */
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}

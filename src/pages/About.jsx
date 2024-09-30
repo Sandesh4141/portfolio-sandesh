@@ -26,14 +26,14 @@ function About() {
         <div className="social-media">
           <h2>Find me on</h2>
           <a
-            href="https://www.linkedin.com/in/sandesh"
+            href="https://www.linkedin.com/in/sandesh-pawar-263a00190/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin className="social-icon" />
           </a>
           <a
-            href="https://github.com/sandesh"
+            href="https://github.com/sandesh4141"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -46,7 +46,11 @@ function About() {
           >
             <FaTwitter className="social-icon" />
           </a>
-          <a href="https://instagram.com/sandesh.sp41">
+          <a
+            href="https://instagram.com/sandesh.sp41"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaInstagram className="social-icon" />
           </a>
         </div>

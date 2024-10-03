@@ -1,10 +1,9 @@
 :root {
-  --color-primary-light: #FDFAD9;  /* Lightest shade */
-  --color-primary: #C1E2A4;        /* Light green */
-  --color-secondary: #86D293;      /* Darker green */
-  --color-accent: #6256CA;         /* Accent purple */
+  --color-primary-light: #fdfad9; /* Lightest shade */
+  --color-primary: #c1e2a4; /* Light green */
+  --color-secondary: #86d293; /* Darker green */
+  --color-accent: #6256ca; /* Accent purple */
 }
-
 
 /* Basic reset */
 * {
@@ -15,7 +14,7 @@
 
 header {
   width: 100%;
-  background-color: var(--color-accent);  /* Use accent purple */
+  background-color: var(--color-accent); /* Use accent purple */
   padding: 1rem;
 }
 
@@ -23,17 +22,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--color-primary-light);  /* Light text color */
+  color: var(--color-primary-light); /* Light text color */
 }
 
 .logo h1 {
   font-family: "Fredoka", sans-serif;
-  color: var(--color-primary-light);  /* Light text color */
+  color: var(--color-primary-light); /* Light text color */
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
   padding: 0;
-  margin : 0;
+  margin: 0;
 }
 
 .nav-links,
@@ -46,7 +45,7 @@ header {
 .nav-links li a,
 .nav-links-mobile li a {
   text-decoration: none;
-  color: var(--color-primary-light);  /* Light text color */
+  color: var(--color-primary-light); /* Light text color */
   font-size: 1rem;
   font-family: "Fredoka", sans-serif;
   transition: color 0.3s;
@@ -54,26 +53,26 @@ header {
 
 .nav-links li a:hover,
 .nav-links-mobile li a:hover {
-  color: var(--color-secondary);  /* Darker green on hover */
+  color: var(--color-secondary); /* Darker green on hover */
 }
 
 .download-btn {
-  background-color: var(--color-secondary);  /* Darker green */
+  background-color: var(--color-secondary); /* Darker green */
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  color: var(--color-primary-light);  /* Light text color */
+  color: var(--color-primary-light); /* Light text color */
   font-weight: bold;
 }
 
 .download-btn:hover {
-  background-color: var(--color-accent);  /* Accent purple on hover */
+  background-color: var(--color-accent); /* Accent purple on hover */
 }
 
 /* Mobile responsiveness */
 .mobile-menu-icon {
   display: none;
   font-size: 2rem;
-  color: var(--color-primary-light);  /* Light icon color */
+  color: var(--color-primary-light); /* Light icon color */
   background: none;
   border: none;
   cursor: pointer;
@@ -91,9 +90,10 @@ header {
     top: 60px;
     right: 0;
     width: 100%;
-    background-color: var(--color-accent);  /* Accent purple background */
+    background-color: var(--color-accent);
     text-align: center;
     gap: 1.5rem;
+    z-index: 1;
     padding: 2rem 0;
   }
 

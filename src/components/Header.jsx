@@ -1,10 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../public/styles/Header.css";
-// import { Link } from "react-scroll";
 
 function Header() {
   const [isMobile, setIsMobile] = useState(false);
+
+  const handleClickOutside = (event) => {
+    if (!event.target.closest('.navbar')) {
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    if (isMobile) {
+      document.body.classList.add('nav-open');
+      document.addEventListener('click', handleClickOutside);
+    } else {
+      document.body.classList.remove('nav-open');
+      document.removeEventListener('click', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [isMobile]);
 
   return (
     <header>
@@ -17,7 +36,6 @@ function Header() {
           onClick={() => setIsMobile(false)}
         >
           <li>
-            {/* <Link to="/">Home</Link> */}
             <Link to="/">Home</Link>
           </li>
           <li>
